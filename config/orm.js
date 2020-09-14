@@ -47,7 +47,7 @@ const orm = {
     });
   },
   deleteOne: function (table, condition, cb) {
-    let queryString = "DELETE FROM " + TABLE + " WHERE " + condition;
+    let queryString = "DELETE FROM " + table + " WHERE " + condition;
 
     console.log(queryString);
     connection.query(queryString, function (err, result) {

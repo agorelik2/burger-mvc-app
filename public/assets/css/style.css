@@ -40,3 +40,9 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+.CompanyLogo {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 175px;
+}

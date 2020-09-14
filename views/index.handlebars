@@ -1,7 +1,9 @@
 <div class="container-fluid">
 
     <div class="jumbotron">
-        <h1>Eat Some Burgers!</h1>
+        <h1>All You Can Eat Burgers!</h1>
+        <img src="/assets/img/burger.jpg" alt="Logo" class="CompanyLogo">
+
     </div>
     <div class="row col-md-12 bottom">
         <h2>Order a Burger</h2>
@@ -19,7 +21,8 @@
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
-                {{> burgers/burger-block devoured=false}}
+                {{!-- {{> burgers/burger-block devoured=false}} --}}
+                <h4>{{this.burger_name}} <button class="change-devoured" data-id="{{this.id}}">Devour It!</button></h4>
                 {{/unless}}
                 {{/each}}
             </ul>
@@ -29,7 +32,8 @@
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
-                {{> burgers/burger-block devoured=true}}
+                {{!-- {{> burgers/burger-block devoured=true}} --}}
+                <h4>{{this.burger_name}} <button class="delete-burger" data-id="{{this.id}}">Delete It!</button></h4>
                 {{/if}}
                 {{/each}}
             </ul>
