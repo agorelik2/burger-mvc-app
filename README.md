@@ -43,6 +43,7 @@ This is a full stack web application built with HTML, CSS, JQeery, MySQL, Node, 
 
 Using one table for the app to work, only 3 columns, id, burger_name and devoured. See below syntax
 
+```
 DROP DATABASE IF EXISTS burgers_db;
 CREATE DATABASE burgers_db;
 USE burgers_db;
@@ -58,9 +59,14 @@ PRIMARY KEY
 (id)
 );
 
+```
+
 ## Screen Shots
 
+Order a burger by entering the name, for example "Awesome Burger"
 ![All You Can Eat Burgers](public/assets/images/awesome_burger.png)
+
+Once ordered, the 'Awesome Burger' is now under 'Choose a Burger to Eat:' column
 ![All You Can Eat Burgers](public/assets/images/awesome_burger_ready.png)
 
 ## Development
@@ -89,6 +95,14 @@ To use this application locally:
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
     "mysql": "^2.18.1"
+
+## Built With
+
+- [VScode](https://code.visualstudio.com/)
+- [Gitbash](https://gitforwindows.org/)
+- [node.js](https://nodejs.org/en/)
+- [express.js](https://expressjs.com/)
+- [MySql](https://www.mysql.com/)
 
 ## Repo:
 
